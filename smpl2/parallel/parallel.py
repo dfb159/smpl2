@@ -1,5 +1,4 @@
 from multiprocessing import Process,Queue
-from smpl.doc import append_doc 
 
 def queued(q,f,*args,**kwargs):
     q.put(f(*args,**kwargs))
@@ -37,7 +36,6 @@ def gen(f,*args,**kwargs):
     yield p.start()
     yield [q.get(),p.join()][0]
 
-@append_doc(res)
 def calc(f,*args,**kwargs):
     g=gen(f,*args,**kwargs)
     next(g)
@@ -54,11 +52,5 @@ def par(f,*args,**kwargs):
         [0, 1, 4, 9, 16]
 
     """
-    return res([calc(f,*[args[k][i] for k in range(len(args))],**{k:v[i] for k,v in kwargs.items()}) for i in range(len(args[0]) if len(args)>0 else len(next(iter(kwargs.values()))))])
- 
- 
- 
-if __name__ == "__main__":
-    import doctest
-    doctest.testmod()
+    return res([calc(f,*[args[k][i] for k in range(len(args))],**{k:v[i] for k,v in kwargs.items()}) for i in range(len(args[0]) if len(args)>0 else len(next(iter(kwargs.values()))))]) 
  

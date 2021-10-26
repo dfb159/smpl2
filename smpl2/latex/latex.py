@@ -1,6 +1,6 @@
 from collections.abc import Iterable
 from itertools import chain, count
-from smpl.io import out
+from smpl2 import io
 import numpy as np
 
 def _filename(path, file):
@@ -32,7 +32,7 @@ def SI(*val, path=None, file=None, unit=None, bonus=None):
         If True, shows the printed output in the console.
         The default is False.
     """
-    return out(_filename(path, file), toSI(val=val, unit=unit, bonus = bonus))
+    return io.out(_filename(path, file), toSI(val=val, unit=unit, bonus = bonus))
 
 def toSI(val=None, unit=None, bonus=None):
     """Return the value in SI notation.
@@ -141,4 +141,4 @@ def table(path, file, data, header=None, leader=None, unit=None, bonus=None, hor
             tab += leader[i] + " & "
         tab += " & ".join(data[i]) + "\\\\\n"
     tab += "\\bottomrule\n\\end{tabular}"
-    return out(_filename(path, file), tab)
+    return io.out(_filename(path, file), tab)

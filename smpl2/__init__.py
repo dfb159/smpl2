@@ -12,7 +12,7 @@ import pkg_resources as pkg  # part of setuptools
 #import requests
 #from urllib.request import urlopen
 
-package = "smpl"
+package = "smpl2"
 
 version = pkg.require(package)[0].version
 __version__ = version

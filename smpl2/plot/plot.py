@@ -5,7 +5,7 @@ import matplotlib
 from matplotlib import colors as mcolors
 from uncertainties.unumpy import nominal_values as unv
 #from uncertainties.unumpy import std_devs as usd
-from smpl import io, fit
+from smpl2 import io, fit
 
 def set_plot_style(**params):
     """

@@ -2,7 +2,7 @@ __pycache__
 .pypirc
 dist/
 build/
-smpl.egg-info/
+smpl2.egg-info/
 .eggs/
 *.pyc
 .ipynb_checkpoints

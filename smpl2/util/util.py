@@ -1,5 +1,5 @@
 import numpy as np
-from smpl.latex import latexify
+from smpl2.latex import latexify
 from uncertainties.unumpy import nominal_values as unv
 from uncertainties.unumpy import std_devs as usd
 

@@ -1,7 +1,7 @@
 import pathlib
 import os
 import sys
-from smpl import debug
+from smpl2 import debug
 
 def pwd():
     """
@@ -40,7 +40,7 @@ def files(folder, ending=''):
 
 def out(filename, txt):
     """
-    Saves ``str(txt)`` into given filename.
+    Saves ``str(txt)`` into given filename and returns the object.
     """
     mkdirs(filename)
     with open(filename,"w") as file:

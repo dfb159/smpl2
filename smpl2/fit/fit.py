@@ -6,8 +6,8 @@ import uncertainties as unc
 from uncertainties.unumpy import nominal_values as unv
 from uncertainties.unumpy import std_devs as usd
 # local imports
-from smpl.functions import polN, order, cos, lorentz, gauss, split_gauss
-from smpl.util import reduce_function, unv_lambda, uncertain
+from smpl2.functions import polN, order, cos, lorentz, gauss, split_gauss
+from smpl2.util import reduce_function, unv_lambda, uncertain
 
 default_funcs = [polN(3), order, cos, lorentz, gauss, split_gauss]
 

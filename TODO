@@ -6,6 +6,7 @@ add arrows
 Use matplot lib => init save etc
 ADD LEGEND separate from plot
 external legend
+update parallel
 
 simple 3d plotting
 simple animations

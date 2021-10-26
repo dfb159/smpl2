@@ -1,11 +1,10 @@
 import numpy as np
 from  uncertainties import ufloat
 import uncertainties.unumpy as unp
+from uncertainties.unumpy import nominal_values as unv
+from uncertainties.unumpy import std_devs as usd
 import scipy
 import math
-
-unv=unp.nominal_values
-usd=unp.std_devs
 
 def poisson(n):
     """

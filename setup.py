@@ -6,9 +6,10 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="smpl2", # Replace with your own username
     setup_requires=['setuptools-git-versioning'],
+    version="0.0.1",
     author="dfb159",
-    author_email="APN-Pucky@no-reply.github.com",
-    description="simple plotting and fitting and uncertainties",
+    author_email="jSigrist@web.de",
+    description="simple plotting and fitting and simulation",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/dfb159/smpl2",
