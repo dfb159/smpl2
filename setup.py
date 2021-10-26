@@ -5,8 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="smpl2", # Replace with your own username
-    setup_requires=['setuptools-git-versioning'],
-    version="0.0.1",
+    version="0.1.0",
     author="dfb159",
     author_email="jSigrist@web.de",
     description="simple plotting and fitting and simulation",
@@ -29,14 +28,5 @@ setuptools.setup(
         #"tqdm",
         #"pandas",
     ],
-    version_config={
-        "template": "{tag}",
-        "dev_template": "{tag}.{ccount}",
-        "dirty_template": "{tag}.{ccount}+dirty",
-        "starting_version": "0.0.0",
-        "version_callback": None,
-        "version_file": None,
-        "count_commits_from_version_file": False
-    },
     python_requires='>=3.6',
 )
