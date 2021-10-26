@@ -1,0 +1,21 @@
+multi fit + subtract
+histogram + errors?
+residual plot
+add lines
+add arrows
+Use matplot lib => init save etc
+ADD LEGEND separate from plot
+external legend
+
+simple 3d plotting
+simple animations
+simple interpolate
+simple simulate
+simple
+
+documentation
+examples with real data
+tests
+makefile
+
+compatibile with pandas?!?!? apparently :)
